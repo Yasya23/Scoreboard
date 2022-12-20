@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="results-window">
+      <table class="table" id="results-table">
+        <tr>
+          <td>Home</td>
+          <td>Guest</td>
+          <td>Time</td>
+        </tr>
+      </table>
+      <button class="button" id="close-button">Close</button>
+    </div>
+    <div class="buttons">
+      <button class="button start-button" id="start-button">Start</button>
+      <button class="button" id="finish-button">Finish</button>
+      <div class="timer" id="timer">00:00</div>
+    </div>
+    <div class="wrapper">
+      <div class="home">
+        <h2 class="title">Home</h2>
+        <div class="score" id="home-highlight">
+          <span class="score-number" id="score-home">0</span>
+        </div>
+        <div class="add-scores" id="home-add-scores">
+          <a href="#" class="add-number" data-id="one">+1</a>
+          <a href="#" class="add-number" data-id="two">+2</a>
+          <a href="#" class="add-number" data-id="three">+3</a>
+        </div>
+      </div>
+      <div class="guest">
+        <h2 class="title">Guest</h2>
+        <div class="score" id="guest-highlight">
+          <span class="score-number" id="score-guest">0</span>
+        </div>
+        <div class="add-scores" id="guest-add-scores">
+          <a href="#" class="add-number" data-id="one">+1</a>
+          <a href="#" class="add-number" data-id="two">+2</a>
+          <a href="#" class="add-number" data-id="three">+3</a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="results-link" id="open-window"
+      >Results of the last 10 games</a
+    >
+    <script src="script.js"></script>
+  </body>
+</html>
