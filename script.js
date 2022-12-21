@@ -39,7 +39,8 @@ data.finishButton.addEventListener("click", () => {
   saveDataToTheList(data.timerTime.textContent);
 });
 
-data.openResultsWindowLink.addEventListener("click", () => {
+data.openResultsWindowLink.addEventListener("click", (event) => {
+  event.preventDefault();
   data.resultsWindow.style.display = "flex";
 });
 
@@ -47,14 +48,16 @@ data.closeResultsWindowBtn.addEventListener("click", () => {
   data.resultsWindow.style.display = "none";
 });
 
-data.home.addEventListener("click", ({ target }) => {
-  homeTeam += addPoints(target.dataset.id);
+data.home.addEventListener("click", (event) => {
+  event.preventDefault();
+  homeTeam += addPoints(event.target.dataset.id);
   showScore(data.scoreHome, homeTeam);
   highlightWinner();
 });
 
-data.guest.addEventListener("click", ({ target }) => {
-  guestTeam += addPoints(target.dataset.id);
+data.guest.addEventListener("click", (event) => {
+  event.preventDefault();
+  guestTeam += addPoints(event.target.dataset.id);
   showScore(data.scoreGuest, guestTeam);
   highlightWinner();
 });
