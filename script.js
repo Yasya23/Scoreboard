@@ -25,18 +25,18 @@ const data = {
 };
 
 data.startButton.addEventListener("click", () => {
-  homeTeam = 0;
-  guestTeam = 0;
-  showScore(data.scoreHome, homeTeam);
-  showScore(data.scoreGuest, guestTeam);
-  highlightWinner();
-  resetTime();
   startTimer();
 });
 
 data.finishButton.addEventListener("click", () => {
   clearInterval(timeInterval);
   saveDataToTheList(data.timerTime.textContent);
+  homeTeam = 0;
+  guestTeam = 0;
+  showScore(data.scoreHome, homeTeam);
+  showScore(data.scoreGuest, guestTeam);
+  highlightWinner();
+  resetTime();
 });
 
 data.openResultsWindowLink.addEventListener("click", (event) => {
