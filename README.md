@@ -1,4 +1,5 @@
 # Scoreboard
+
 [Demo](https://yasya23.github.io/Scoreboard/#)
 
 ## Overview
@@ -13,5 +14,4 @@ Game Scoreboard adapted to all devices. Includes timer and table of results for 
 
 ### Screenshot
 
-![](./screenshot/1.png)
-
+![](./screenshot/1.jpg)
