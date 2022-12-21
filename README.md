@@ -1,5 +1,5 @@
 # Scoreboard
-[Demo](https://yasya23.github.io/scoreboard/#)
+[Demo](https://yasya23.github.io/Scoreboard/#)
 
 ## Overview
 
