@@ -29,6 +29,7 @@ data.startButton.addEventListener("click", () => {
 });
 
 data.finishButton.addEventListener("click", () => {
+  data.startButton.disabled=false;
   clearInterval(timeInterval);
   saveDataToTheList(data.timerTime.textContent);
   homeTeam = 0;
@@ -112,7 +113,9 @@ function checkNumberOfItemsInList() {
 }
 
 function startTimer() {
+
   timeInterval = setInterval(function () {
+    data.startButton.disabled=true;
     data.timerTime.textContent =
       (hour ? hour + ":" : "") +
       (minutes < 10 ? "0" + minutes : minutes) +
